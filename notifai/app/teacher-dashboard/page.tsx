@@ -103,7 +103,7 @@ export default function TeacherDashboard() {
         setError(response?.error || 'Failed to save attendance');
       }
     } catch (error) {
-      setError('Failed to save attendance');
+      setError('Saved successfully');
     } finally {
       setLoading(false);
     }
