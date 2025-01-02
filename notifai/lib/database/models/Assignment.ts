@@ -1,6 +1,7 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema, Document, Model } from 'mongoose';
 
 export interface IAssignment extends Document {
+  _id: string;
   title: string;
   description: string;
   class: string;
@@ -18,4 +19,12 @@ const AssignmentSchema: Schema = new Schema({
   timestamps: true
 });
 
-export default mongoose.models.Assignment || mongoose.model<IAssignment>('Assignment', AssignmentSchema);
+// Check if the model exists before creating a new one
+let Assignment: Model<IAssignment>;
+try {
+  Assignment = mongoose.model<IAssignment>('Assignment');
+} catch {
+  Assignment = mongoose.model<IAssignment>('Assignment', AssignmentSchema);
+}
+
+export default Assignment;

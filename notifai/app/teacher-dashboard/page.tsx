@@ -37,13 +37,13 @@ const MOCK_TEACHER_ID = '65f1f143d5e38e0d8b123456';  // 24-character hex string
 const MOCK_CLASSES: Class[] = [
   {
     _id: "65f1f143d5e38e0d8b654321",
-    name: "Class 10-A",
-    subject: "Mathematics",
+    name: "N8",
+    subject: "AI",
     students: [
-      { _id: "65f1f143d5e38e0d8b111111", name: "John Doe" },
-      { _id: "65f1f143d5e38e0d8b222222", name: "Jane Smith" },
-      { _id: "65f1f143d5e38e0d8b333333", name: "Bob Wilson" },
-      { _id: "65f1f143d5e38e0d8b444444", name: "Alice Brown" },
+      { _id: "65f1f143d5e38e0d8b111111", name: "Nahom Teguade" },
+      { _id: "65f1f143d5e38e0d8b222222", name: "Lukman Ali" },
+      { _id: "65f1f143d5e38e0d8b333333", name: "Nebyou Yohannes" },
+      { _id: "65f1f143d5e38e0d8b444444", name: "Arsema Haileyesus" },
     ]
   }
 ];
